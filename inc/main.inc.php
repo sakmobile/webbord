@@ -226,7 +226,7 @@ $PARENT_FILENAME = pathinfo($_SERVER['SCRIPT_FILENAME'], PATHINFO_BASENAME);
 							หน้าแรก
 						</a>
 					</li>
-					<?php if (isset($_SESSION["fullname"])) { ?>
+					
 						<li class="<?php
 									/*
 						ทำการตรวจสอบเมนูอื่นเช่นเดียวกัน
@@ -241,7 +241,7 @@ $PARENT_FILENAME = pathinfo($_SERVER['SCRIPT_FILENAME'], PATHINFO_BASENAME);
 								ตั้งกระทู้ใหม่
 							</a>
 						</li>
-					<?php } else { ?>
+					
 						<li class="<?php
 									/*
 						ทำการตรวจสอบเมนูอื่นเช่นเดียวกัน
@@ -257,7 +257,6 @@ $PARENT_FILENAME = pathinfo($_SERVER['SCRIPT_FILENAME'], PATHINFO_BASENAME);
 							</a>
 						</li>
 
-					<?php } ?>
 					<?php
 					/*
 						สำหรับเมนูนี้ ถ้าไม่ได้อยู่ที่ view.php ก็จะไม่แสดงผลเลย
